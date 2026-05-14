@@ -11,5 +11,5 @@ python main.py
 # Lista de comandos do git executados:
 
 git add .
-git commit -m
-git 
+git commit -m "..."
+dir

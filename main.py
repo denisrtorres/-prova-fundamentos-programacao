@@ -1,5 +1,5 @@
 
-while true: 
+while True: 
     
 print ("=== SISTEMA DE VENDAS ===")
 print ("1 - Registrar venda")
@@ -36,12 +36,16 @@ valor_final = valor_bruto - desconto
 
 vendas = +1
 
-
-print("Valor inicial da venda: R$"(valor_bruto))
-print("Desconto aplicado: R$"(valor_desconto))
-print("Valor do desconto: R$"(desconto))
-print("Valor final da venda: R$"(valor_final))
+print("Valor inicial da venda: R$", valor_bruto)
+print("Desconto aplicado: R$", valor_desconto)
+print("Valor do desconto: R$", desconto)
+print("Valor final da venda: R$", valor_final)
 print("Venda registrada com sucesso!")
+
+
+# ------------------------SEGUNDA PARTE-----------------------------
+
+
 
 (print("=== SISTEMA DE VENDAS ==="))
 
@@ -49,9 +53,9 @@ print("1- Registrar venda")
 print("2- Ver resumo parcial")
 print("3- Encerrar sistema")
 
-print("Escolha uma")
+print("Escolha uma opção válida")
 
-elif opcao == 2:
+    elif opcao == 2:
 
         print("=== RESUMO PARCIAL ===")
 
@@ -59,3 +63,22 @@ elif opcao == 2:
         print("Total bruto vendido: R$", valor_bruto)
         print("Total de descontos concedidos: R$", desconto)
         print("Total líquido vendido: R$", valor_final)
+
+
+# ------------------------TERCEIRA PARTE-----------------------------
+
+    elif opcao == 3:
+
+        print("=== RESUMO PARCIAL ===")
+
+        print("Total de vendas realizadas:", vendas)
+        print("Total bruto vendido: R$", valor_bruto)
+        print("Total de descontos concedidos: R$", desconto)
+        print("Total líquido vendido: R$", valor_final)
+
+break
+
+
+    else:
+        print("Escolha uma opção válida.")
+
