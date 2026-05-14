@@ -4,15 +4,18 @@ while True:
     print("1 - Registrar venda")
     print("2 - Ver resumo parcial")
     print("3 - Encerrar sistema")
-    print("Escolha uma opção:")
+
+    int(input("Escolha uma opção:"))
 
     opcao = int(input("Nome do produto"))
+
 
     if opcao == 1:
         nome = input("Nome do produto")
         valor_varejo = float(input("Valor unitário:"))
         quantidade = int(input("Quantidade:"))
 
+        valor_desconto = 0
         valor_bruto = valor_varejo * quantidade
         print("Valor: R$",valor_bruto)
 
@@ -52,26 +55,29 @@ while True:
     print("Escolha uma opção válida")
 
     if opcao == 2:
-    print("=== RESUMO PARCIAL ===")
+        print("=== RESUMO PARCIAL ===")
 
-    print("Total de vendas realizadas:", vendas)
-    print("Total bruto vendido: R$", valor_bruto)
-    print("Total de descontos concedidos: R$", desconto)
-    print("Total líquido vendido: R$", valor_final)
+        print("Total de vendas realizadas:", vendas)
+        print("Total bruto vendido: R$", valor_bruto)
+        print("Total de descontos concedidos: R$", desconto)
+        print("Total líquido vendido: R$", valor_final)
 
     # ------------------------TERCEIRA PARTE-----------------------------
 
     if opcao == 3:
 
-    print("=== RESUMO PARCIAL ===")
+        print("=== RESUMO PARCIAL ===")
 
-    print("Total de vendas realizadas:", vendas)
-    print("Total bruto vendido: R$", valor_bruto)
-    print("Total de descontos concedidos: R$", desconto)
-    print("Total líquido vendido: R$", valor_final)
+        print("Total de vendas realizadas:", vendas)
+        print("Total bruto vendido: R$", valor_bruto)
+        print("Total de descontos concedidos: R$", desconto)
+        print("Total líquido vendido: R$", valor_final)
+
+    else:
+
+        print("Escolha uma opção válida.")
 
     break
 
-    else
-    print("Escolha uma opção válida.")
+
 
